@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(29, 29, 29);
+}
+
+.playerList{
+    position: fixed;
+    bottom: 1%;
+    left:0;
+    right:0;
+}
