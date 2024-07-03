@@ -127,3 +127,11 @@
   color: #ffffff;
   cursor: not-allowed;
 }
+
+.error_msg{
+  background-color: #a01006;
+  border-radius: 5px;
+  text-align: center;
+  padding: 1%;
+  width:50%;
+}
