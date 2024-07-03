@@ -1,7 +1,27 @@
 .playerList{
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 3%;
     margin-left:10%;
     margin-right:10%;
+    min-height: 140px;
 }
+
+.addButton{
+    border: none;
+    background-color: white;
+    font-size: 130%;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    background-color: rgb(0, 102, 255);
+    color:white;
+}
+
+.addButton:hover{
+    cursor: pointer;
+    background-color: rgb(0, 80, 201);
+}
+
