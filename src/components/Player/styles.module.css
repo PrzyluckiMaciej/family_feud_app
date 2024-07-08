@@ -5,7 +5,8 @@
     border-radius: 20px;
     position: relative;
     background-color: white;
-    min-height: 135px;
+    min-height: 170px;
+    font-size: 130%;
 }
 
 .playerName{
@@ -19,7 +20,7 @@
 .plusButton, .deleteButton, .crossIcon, .crossButton{
     border: none;
     background-color: white;
-    font-size: 130%;
+    font-size: 140%;
 }
 
 .plusButton:hover{
@@ -35,10 +36,10 @@
 .deleteButton{
     position:absolute;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    top:-10px;
-    right:-10px;
+    width: 50px;
+    height: 50px;
+    top:-20px;
+    right:-20px;
     border: 2px solid black;
     background-color: red;
     color:white;
@@ -89,5 +90,5 @@
 }
 
 .crossContainer{
-    min-height: 30px;
+    min-height: 35px;
 }

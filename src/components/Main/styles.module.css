@@ -8,3 +8,15 @@ body{
     left:0;
     right:0;
 }
+
+.addPlayer{
+    position: fixed;
+    bottom: 7%;
+    right:3%;
+}
+
+.addQuestion{
+    position: fixed;
+    top: 35%;
+    right:3%;
+}
