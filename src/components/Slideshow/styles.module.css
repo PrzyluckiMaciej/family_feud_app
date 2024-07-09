@@ -9,15 +9,6 @@
   transition: ease 1000ms;
 }
 
-.slide {
-  display: inline-block;
-  height: 620px;
-  width: 100%;
-  border-radius: 40px;
-  margin-top:3%;
-  background-color: white;
-}
-
 .slideshowDots {
   text-align: center;
 }

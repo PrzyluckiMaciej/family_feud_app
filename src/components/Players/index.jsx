@@ -2,7 +2,7 @@ import styles from "./styles.module.css";
 import Player from "../Player";
 import { useEffect, useState } from "react";
 
-function Players(props) {
+function Players() {
   const [players, setPlayers] = useState([]);
 
   useEffect(() => {

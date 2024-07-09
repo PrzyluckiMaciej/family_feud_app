@@ -1,7 +1,6 @@
 import styles from "./styles.module.css";
 import Slide from "../Slide";
 import { useEffect, useState } from "react";
-const colors = ["#0088FE", "#00C49F", "#FFBB28"];
 
 function Slideshow() {
   const [index, setIndex] = useState(0);
@@ -21,7 +20,7 @@ function Slideshow() {
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
         {slides.map((item, index) => (
-          <Slide question={item} className={styles.slide} key={index} />
+          <Slide question={item} key={index} index={index} />
         ))}
       </div>
       <div className={styles.slideshowDots}>
