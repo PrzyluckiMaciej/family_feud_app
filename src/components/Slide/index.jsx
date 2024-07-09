@@ -5,8 +5,8 @@ import { Trash, Edit } from "@rsuite/icons";
 import Answers from "../Answers";
 
 const Slide = (props) => {
-  var [question, setQuestion] = useState(props.question);
-  var [editingOn, setEditingOn] = useState(false);
+  const [question, setQuestion] = useState(props.question);
+  const [editingOn, setEditingOn] = useState(false);
 
   const handleDeleteQuestion = () => {
     var data = JSON.parse(localStorage.getItem("questionList"));
@@ -49,14 +49,14 @@ const Slide = (props) => {
     <div className={styles.slide}>
       <div className={styles.topBar}>
         {editingOn ? (
-          <input
+          <textarea
             type="text"
             name="question"
             className={`${styles.question} ${styles.input}`}
             value={question.question}
             onChange={handleChange}
             onKeyDown={handleKeyPress}
-          ></input>
+          ></textarea>
         ) : (
           <p className={styles.question}>{question.question}</p>
         )}

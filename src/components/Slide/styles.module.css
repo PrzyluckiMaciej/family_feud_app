@@ -1,6 +1,5 @@
 .slide {
   display: inline-block;
-  height: 620px;
   width: 100%;
   border-radius: 40px;
   margin-top: 3%;
@@ -14,6 +13,7 @@
   justify-content: space-between;
   padding-left: 5%;
   padding-right: 5%;
+  height:150px;
 }
 
 .button:hover {
@@ -41,14 +41,18 @@
   border: 2px solid white;
   padding: 1%;
   text-align: left;
-  word-break: break-all;
+  word-break: normal;
   white-space: normal;
+}
+
+textarea {
+  resize: none;
 }
 
 .input {
   border: 2px solid black;
   border-radius: 5px;
-  word-break: break-all;
+  word-break: normal;
   white-space: normal;
   margin-bottom:32px;
 }
@@ -58,24 +62,21 @@
   border-radius: 4px;
 }
 
-.answerTable {
-  text-align: center;
-  width: 100%;
-  height: 400px;
-  border-spacing: 0;
-  padding: 3%;
-}
-
-.answerTable td {
-  border-bottom: 1px solid black;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 120%;
-}
-
-.leftCell {
-  border-right: 1px solid black;
-}
-
-.bottomCell{
-  border-bottom: none !important;
+@media screen and (max-width: 625px), screen and (max-height:630px) {
+  .question{
+    font-size: 130%;
+    margin-left:5%;
+  }
+  .topBar{
+    height: 100px;
+  }
+  textarea{
+    height:50px;
+  }
+  .button{
+    font-size: 100%;
+  }
+  .buttons{
+    margin-right:2%;
+  }
 }

@@ -5,8 +5,8 @@ import { useState } from "react";
 
 const Player = (props) => {
   const player = props.player;
-  var [points, setPoints] = useState(0);
-  var [livesLost, setLivesLost] = useState(0);
+  const [points, setPoints] = useState(0);
+  const [livesLost, setLivesLost] = useState(0);
 
   const handleAddPoints = () => {
     setPoints(points + 1);

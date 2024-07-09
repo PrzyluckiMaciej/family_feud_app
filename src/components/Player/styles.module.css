@@ -1,94 +1,129 @@
-.playerContainer{
-    border: 2px solid black;
-    width:20%;
-    text-align: center;
-    border-radius: 20px;
-    position: relative;
-    background-color: white;
-    min-height: 170px;
-    font-size: 130%;
+.playerContainer {
+  border: 2px solid black;
+  width: 20%;
+  text-align: center;
+  border-radius: 20px;
+  position: relative;
+  background-color: white;
+  height: 170px;
+  font-size: 130%;
 }
 
-.playerName{
-    font-weight: bold;
+.playerName {
+  font-weight: bold;
 }
 
-.playerName:hover{
-    cursor: pointer;
+.playerName:hover {
+  cursor: pointer;
 }
 
-.plusButton, .deleteButton, .crossIcon, .crossButton{
-    border: none;
-    background-color: white;
-    font-size: 140%;
+.plusButton,
+.deleteButton,
+.crossIcon,
+.crossButton {
+  border: none;
+  background-color: white;
+  font-size: 140%;
 }
 
-.plusButton:hover{
-    cursor: pointer;
-    color:rgb(0, 87, 4);
+.plusButton:hover {
+  cursor: pointer;
+  color: rgb(0, 87, 4);
 }
 
-.deleteButton:hover{
-    background-color: rgb(182, 0, 0);
-    cursor: pointer;
+.deleteButton:hover {
+  background-color: rgb(182, 0, 0);
+  cursor: pointer;
 }
 
-.deleteButton{
-    position:absolute;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    top:-20px;
-    right:-20px;
-    border: 2px solid black;
-    background-color: red;
-    color:white;
+.deleteButton {
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  top: -20px;
+  right: -20px;
+  border: 2px solid black;
+  background-color: red;
+  color: white;
 }
 
-.plusButton, .crossButton{
-    color:green;
-    height: auto;
-    font-size: 150%;
-    margin-bottom: 2%;
+.plusButton,
+.crossButton {
+  color: green;
+  margin-bottom: 2%;
+  padding: 0;
+  height: 35px;
+  align-self: center;
+  padding-left: 3%;
 }
 
-.crossButton{
-    color:red;
-    border-radius: 50%;
-    padding:0;
+.crossButton {
+  color: red;
 }
 
-.crossButton:hover{
-    color:rgb(182, 0, 0);
-    cursor:pointer;
+.crossButton:hover {
+  color: rgb(182, 0, 0);
+  cursor: pointer;
 }
 
-.pointsContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-left:2%;
-    margin-right:1%;
+.pointsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 2%;
+  margin-right: 1%;
 }
 
-.points{
-    width:40%;
-    border: 1px solid black;
-    background-color: rgb(204, 204, 204);
-    border-radius: 5px;
+.points {
+  width: 40%;
+  border: 1px solid black;
+  background-color: rgb(204, 204, 204);
+  border-radius: 5px;
 }
 
-.points:hover{
-    cursor: pointer;
-    border: 1px solid rgb(182, 0, 0);
-    background-color: rgb(255, 164, 164);
-    text-decoration: line-through;
+.points:hover {
+  cursor: pointer;
+  border: 1px solid rgb(182, 0, 0);
+  background-color: rgb(255, 164, 164);
+  text-decoration: line-through;
 }
 
-.points:before, .points:after{
-    content:"\00a0\00a0";
+.points:before,
+.points:after {
+  content: "\00a0\00a0";
 }
 
-.crossContainer{
-    min-height: 35px;
+.crossContainer {
+  min-height: 35px;
+}
+
+@media screen and (max-width: 630px), screen and (max-height:630px) {
+  .playerContainer {
+    height: 100px;
+    font-size: 60%;
+  }
+  .deleteButton {
+    width: 25px;
+    height: 25px;
+    font-size: 90%;
+    top: -10px;
+    right: -10px;
+  }
+  .plusButton,
+  .crossButton {
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .playerContainer {
+    height: 90px;
+    font-size: 50%;
+    padding-bottom:1%;
+  }
+  .plusButton,
+  .crossButton {
+    height: 20px;
+  }
 }

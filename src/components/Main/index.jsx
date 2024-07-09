@@ -7,7 +7,7 @@ import AddQuestion from "../AddQuestion";
 const Main = () => {
   return (
     <div>
-      <div>
+      <div className={styles.slideshow}>
         <Slideshow />
       </div>
       <div className={styles.addQuestion}>
