@@ -28,14 +28,19 @@ const Player = (props) => {
 
   const handleDeletePlayer = () => {
     var data = JSON.parse(localStorage.getItem("playerList"));
-    data = data.filter(i => i.name !== player.name);
+    data = data.filter((i) => i.name !== player.name);
     localStorage.setItem("playerList", JSON.stringify(data));
     window.location.reload();
-  }
+  };
 
   return (
     <div className={styles.playerContainer}>
-      <IconButton className={styles.deleteButton} icon={<Trash />} onClick={handleDeletePlayer}></IconButton>
+      <IconButton
+        className={styles.deleteButton}
+        icon={<Trash />}
+        onClick={handleDeletePlayer}
+        title="Delete player"
+      ></IconButton>
       <p className={styles.playerName} onClick={handleDeleteCross}>
         {player.name}
       </p>

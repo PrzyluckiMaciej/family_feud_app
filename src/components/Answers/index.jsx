@@ -18,14 +18,12 @@ const Answers = (props) => {
     let answers = question.answers;
     answers[input.name] = input.value;
     setQuestion({ ...question, answers: answers });
-    console.log(input.name);
   };
 
   const handleCover = (index) => {
     let newCovers = [...covers];
     newCovers[index] = !covers[index];
     setCovers(newCovers);
-    console.log(covers[index]);
   };
 
   return (

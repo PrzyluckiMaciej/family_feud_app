@@ -17,6 +17,7 @@ function AddPlayer() {
         className={styles.addButton}
         icon={<Plus />}
         onClick={toggleShowForm}
+        title="Add a new player"
       ></IconButton>
       {showForm ? <PlayerForm toggle={toggleShowForm} /> : null}
     </div>

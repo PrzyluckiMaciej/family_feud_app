@@ -33,6 +33,7 @@ function AddQuestion() {
         className={styles.addButton}
         icon={<HelpOutline />}
         onClick={addBlankQuestion}
+        title="Add a new question"
       ></IconButton>
     </div>
   );
