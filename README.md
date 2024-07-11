@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+<h1>Family Feud App</h1>
+<a href="#pol">Wersja polska</a><br><br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The app was created with the use of the React library. It can be used to host a Family Feud style game.
 
-## Available Scripts
+<h3>How to play:</h3>
+One person is the game host - they're the only one who interacts with the app directly. This person's role is to present the questions, uncover answers, award points and add X's when a contestant has answered wrong. The rest of the players are contestants tasked with answering the questions.
 
-In the project directory, you can run:
+<h3>Starting the app:</h3>
+To start the app type <i>npm start</i> in the terminal (make sure you're in the <i>family_feud_app</i> directory). All of the data (questions, answers and players) is kept in the browser's local storage, so it will prevail after closing the app. After launching the app two buttons will be visible:
 
-### `npm start`
+- The question mark button - adds a new question card filled with default data.
+- The plus button - shows a form that adds a new player. Each player must have a unique name.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h3>Players:</h3>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Trash button - deletes the player.
+- Plus button - adds 1 point. Clicking on the point count brings them back down to 0.
+- Minus button - adds one X (up to 3). Clicking on the name clears the X's.
 
-### `npm test`
+<h3>Question Cards:</h3>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Each question has 8 answers by default.
+- Clicking on an answer reveals it.
+- To delete the question card, click the trash button in the top right corner.
+- To edit the question card, click the pencil button to the left of the trash button.
+- Clicking the pencil button enables Edit Mode, which allows you to edit the question and the answers.
+- To disable an answer from showing you can leave it empty (for example a question could only have 5 answers assigned, then the last 3 answers should be left empty). Empty answers will no longer have a number displayed outside of the Edit Mode.
+- The question is required, it cannot be left empty.
 
-### `npm run build`
+<br><h1 id="pol">Aplikacja Familiada</h1>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Aplikacja została utworzona przy pomocy biblioteki React. Można jej używać do poprowadzenia gry w stylu Familiady.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<h3>Jak grać:</h3>
+Jedna osoba jest gospodarzem - tylko ona wchodzi w bezpośrednią interakcję z aplikacją. Jej zadaniem jest prezentacja pytań, odsłanianie odpowiedzi, przydzielanie punktów i dodawanie krzyżyków w przypadku nieprawidłowej odpowiedzi. Reszta graczy to uczestnicy, których zadaniem jest odpowiadanie na pytania
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<h3>Uruchamianie aplikacji:</h3>
+Aby uruchomić aplikację należy wpisać <i>npm start</i> w terminalu (upewnij się, że jesteś w folderze <i>family_feud_app</i>). Wszystkie dane (pytania, odpowiedzi i gracze) są przechowywane w local storage w przeglądarce, więc zostaną zachowane po zamknięciu aplikacji. Po uruchomieniu aplikacji widoczne będą dwa przyciski:
 
-### `npm run eject`
+- Przycisk z pytajnikiem - dodaje nową kartę z pytaniem wypełnioną domyślnymi danymi.
+- Przycisk z plusem - wyświetla formularz dodający nowego gracza. Każdy gracz musi posiadać unikalną nazwę.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<h3>Gracze:</h3>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Przycisk kosza - usuwa gracza.
+- Przycisk plus - dodaje 1 punkt. Kliknięcie licznika punktów wyzeruje je.
+- Przycisk minus - dodaje 1 krzyżyk (maksymalnie można dodać 3). Kliknięcie nazwy gracza usuwa wszystkie krzyżyki.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<h3>Karty z pytaniami:</h3>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Każde pytanie domyślnie posiada 8 odpowiedzi.
+- Kliknięcie na odpowiedź odsłania ją.
+- Aby usunąć kartę z pytaniem, należy kliknąć na ikonę kosza w prawym górnym rogu.
+- Aby edytować kartę z pytaniem, należy kliknąć na ikonę ołówka na lewo od ikony kosza.
+- Kliknięcie ikony ołówka włącza tryb edycji, który pozwala na edycję pytania i odpowiedzi.
+- Aby wyłączyć wyświetlanie odpowiedzi należy pozostawić ją pustą (na przykład jeśli pytanie ma 5 przypisanych odpowiedzi, to należy pozostawić 3 ostatnie odpowiedzi puste). Puste odpowiedzi nie będą miały wyświetlanego numeru poza trybem edycji.
+- Pytanie jest wymagane, nie może pozostać puste.

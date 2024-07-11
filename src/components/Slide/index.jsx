@@ -17,9 +17,12 @@ const Slide = (props) => {
 
   const handleEditQuestion = () => {
     if (editingOn) {
-      handleSubmit();
+      if (handleSubmit()) {
+        setEditingOn(!editingOn);
+      }
+    } else {
+      setEditingOn(!editingOn);
     }
-    setEditingOn(!editingOn);
   };
 
   const handleChange = ({ currentTarget: input }) => {
@@ -28,21 +31,28 @@ const Slide = (props) => {
 
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
-      handleSubmit();
-      setEditingOn(!editingOn);
+      if (handleSubmit()) {
+        setEditingOn(!editingOn);
+      }
     }
   };
 
   const handleSubmit = () => {
-    var arr = JSON.parse(localStorage.getItem("questionList") || "[]");
-    arr.find((o, i) => {
-      if (o.id === question.id) {
-        arr[i] = question;
-        return true;
-      }
+    if (question.question === "") {
+      window.alert("The question cannot be empty!");
       return false;
-    });
-    localStorage.setItem("questionList", JSON.stringify(arr));
+    } else {
+      var arr = JSON.parse(localStorage.getItem("questionList") || "[]");
+      arr.find((o, i) => {
+        if (o.id === question.id) {
+          arr[i] = question;
+          return true;
+        }
+        return false;
+      });
+      localStorage.setItem("questionList", JSON.stringify(arr));
+      return true;
+    }
   };
 
   return (
